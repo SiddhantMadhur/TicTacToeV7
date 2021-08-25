@@ -1,18 +1,99 @@
 <!DOCTYPE html>
 
 <head>
-	<meta name="viewport" content=
-		"width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- CSS file Included -->
-	<link rel="stylesheet"
-		type="text/css" href="tic.css">
+	<link rel="stylesheet" type="text/css" href="tic.css">
 
 	<!-- JavaScript file included -->
 	<script src="tic.js"></script>
+	<title>TicTacToe | TheLanShow</title>
 </head>
 
 <body>
+
+	<style>
+		* {
+			font-family: Arial, Helvetica, sans-serif;
+			background-color: rgb(49, 49, 49);
+			color: white;
+
+		}
+
+
+		/* CSS Code */
+		/* Heading */
+		h1 {
+			color: rgb(94, 114, 182);
+			font-size: 45px;
+		}
+
+		/* 3*3 Grid */
+		#b1,
+		#b2,
+		#b3,
+		#b4,
+		#b5,
+		#b6,
+		#b7,
+		#b8,
+		#b9 {
+			width: 80px;
+			height: 52px;
+			margin: auto;
+			border: 1px solid gray;
+			border-radius: 6px;
+			font-size: 30px;
+			text-align: center;
+
+		}
+
+		/* Reset Button */
+		#but {
+			box-sizing: border-box;
+			width: 95px;
+			height: 40px;
+			border: 1px solid dodgerblue;
+			margin: auto;
+			border-radius: 4px;
+			font-family: Verdana,
+				Geneva, Tahoma, sans-serif;
+
+			background-color: dodgerblue;
+			color: white;
+			font-size: 20px;
+			cursor: pointer;
+		}
+
+		/* Player turn space */
+		#print {
+			font-family: Verdana,
+				Geneva, Tahoma, sans-serif;
+
+			color: dodgerblue;
+			font-size: 20px;
+		}
+
+		/* Main Container */
+		#main {
+			text-align: center;
+		}
+
+		/* Game Instruction Text */
+		#ins {
+			font-family: Verdana,
+				Geneva, Tahoma, sans-serif;
+
+			color: dodgerblue;
+			font-size: 17px;
+		}
+
+		.end {
+			text-align: center;
+			font-size: 1.4rem;
+		}
+	</style>
 	<div id="main">
 		<h1>TIC TAC TOE</h1>
 
@@ -26,34 +107,25 @@
 
 		<br><br>
 		<!-- 3*3 grid of Boxes -->
-		<input type="text" id="b1" onclick=
-			"myfunc_3(); myfunc();" readonly>
+		<input type="text" id="b1" onclick="myfunc_3(); myfunc();" readonly>
 
-		<input type="text" id="b2" onclick=
-			"myfunc_4(); myfunc();" readonly>
+		<input type="text" id="b2" onclick="myfunc_4(); myfunc();" readonly>
 
-		<input type="text" id="b3" onclick=
-			"myfunc_5(); myfunc();" readonly>
+		<input type="text" id="b3" onclick="myfunc_5(); myfunc();" readonly>
 		<br><br>
 
-		<input type="text" id="b4" onclick=
-			"myfunc_6(); myfunc();" readonly>
-			
-		<input type="text" id="b5" onclick=
-			"myfunc_7(); myfunc();" readonly>
+		<input type="text" id="b4" onclick="myfunc_6(); myfunc();" readonly>
 
-		<input type="text" id="b6" onclick=
-			"myfunc_8(); myfunc();" readonly>
+		<input type="text" id="b5" onclick="myfunc_7(); myfunc();" readonly>
+
+		<input type="text" id="b6" onclick="myfunc_8(); myfunc();" readonly>
 		<br><br>
 
-		<input type="text" id="b7" onclick=
-			"myfunc_9(); myfunc();" readonly>
+		<input type="text" id="b7" onclick="myfunc_9(); myfunc();" readonly>
 
-		<input type="text" id="b8" onclick=
-			"myfunc_10();myfunc();" readonly>
+		<input type="text" id="b8" onclick="myfunc_10();myfunc();" readonly>
 
-		<input type="text" id="b9" onclick=
-			"myfunc_11();myfunc();" readonly>
+		<input type="text" id="b9" onclick="myfunc_11();myfunc();" readonly>
 
 		<!-- Grid end here -->
 		<br><br><br>
@@ -70,7 +142,7 @@
 	</div>
 	<div class='end'>
 		<a href="https://thelanshow.gq/">Go back to TheLanShow.gq</a>
-		
+
 	</div>
 </body>
 
